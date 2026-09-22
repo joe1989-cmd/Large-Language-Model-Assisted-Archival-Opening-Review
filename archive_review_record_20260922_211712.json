@@ -1,0 +1,64 @@
+{
+  "task_id": "ARCHIVE_REVIEW_20260922_211712",
+  "task_type": "档案开放审核辅助原型",
+  "case": {
+    "title": "北京市人民政府对《市城市规划设计研究院关于金海风景区总体规划请示》的批复",
+    "document_no": "京政发〔1992〕3号",
+    "formation_date": "1992-01-16",
+    "formation_unit": "北京市人民政府",
+    "historical_classification": "未提供",
+    "declassification_status": "未提供"
+  },
+  "model": {
+    "name": "Qwen2.5-7B-Instruct",
+    "quantization": "8-bit",
+    "device": "cuda:0"
+  },
+  "generation_config": {
+    "max_new_tokens": 1800,
+    "do_sample": false,
+    "repetition_penalty": 1.03,
+    "seed": 42
+  },
+  "input": {
+    "input_token_count": 5399,
+    "archive_paragraph_count": 48,
+    "rule_ids": [
+      "R01-A20",
+      "R01-A27",
+      "R01-A28",
+      "R01-A30",
+      "R01-A32",
+      "R02-A30",
+      "R02-A31",
+      "R03-A07",
+      "R03-A08",
+      "R03-A09",
+      "R03-A12",
+      "R03-A13",
+      "R03-A14",
+      "R03-A15",
+      "R03-A17"
+    ]
+  },
+  "output_files": [
+    "archive_review_raw_20260922_211712.txt",
+    "rule_package_20260922_211712.json"
+  ],
+  "validation": {
+    "used_rule_ids": [
+      "R01-A27",
+      "R03-A08"
+    ],
+    "invalid_rule_ids": [],
+    "used_archive_paragraph_ids": [
+      "D003",
+      "D005",
+      "D009",
+      "D048"
+    ],
+    "invalid_archive_paragraph_ids": [],
+    "compliance_issues": []
+  },
+  "run_time": "20260922_211712"
+}
